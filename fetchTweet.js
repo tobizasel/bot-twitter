@@ -7,7 +7,7 @@ const tweetId = "1830551634956685631"
 
 
 // Function to fetch a specific tweet
-async function fetchTweet() {
+async function fetchTweet(tweetId) {
     try {
         // Twitter API endpoint to get a specific tweet
         const url = `https://api.twitter.com/2/tweets/${tweetId}`;
@@ -27,4 +27,4 @@ async function fetchTweet() {
 }
 
 // Replace 'tweetId' with the specific tweet's ID you want to fetch
-fetchTweet('YOUR_TWEET_ID');
+fetchTweet(tweetId);
